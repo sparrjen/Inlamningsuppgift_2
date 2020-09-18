@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Inlamningsuppgift_2.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,13 @@ namespace Inlamningsuppgift_2
         {
             InitializeComponent();
         }
+
+        private void btnMessages_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new MessageViewModel();
+        }
+
+      
     }
 }
 // Test
